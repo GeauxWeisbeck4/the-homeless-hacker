@@ -1,0 +1,41 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>The Homeless Hacker</h1>
+			<p>
+				Welcome to the Homeless Hacker blog, where you will find survival tips, product recommendations, and other resources for those who are unhoused or living transient.
+			</p>
+			<p>
+				This project was created by Andrew Weisbeck and Lisa Heusner as a creative outlet and as a way to try and help them make some money to lift themselves out of their current living situation.
+			</p>
+			<p>Here are some topics and other things you will find on this website:</p>
+			<ul>
+				<li>How to deal with uncomfortable realities such as <a href="#">dealing with trenchfoot</a>, <a href="#">staying warm at night</a>, and <a href="#">proteting yourself from dangerous people</a></li>
+				<li>Recommendations for gear that will help make living outside much easier</li>
+				<li>Data and statistics about homelessness to help everyone understand the magnitude of this problem in our society</li>
+				<li>Survival guides such as <a href="#">Panhandling 101</a>, <a href="#">Where to Find Free Food</a>, and <a href="#">How to Build a Camp</a></li>
+				<li>A weekly newsletter with discounts on products, the latest blog posts, and updates to our own situation</li>
+				<li>Ways that you can help us and other homeless individuals out by <a href="/donate">donating to our cause</a> or <a href="/shop">purchasing our merchandise</a></li>
+			</ul>
+			<p>
+				We hope you enjoy our project and find it useful for your own needs - whether that being surviving homelessness or trying to help a loved one or friend. This is the website that we wish we had when we lost our housing and had to figure out how to survive the streets.
+			</p>
+			<p>
+				Think our work is awesome? <a href="/donate">donate to our cause</a>, <a href="/shop">rep our merchandise</a>, or <a href="#">subscribe to our newsletter</a> and share this site with friends and family!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
